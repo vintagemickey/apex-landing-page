@@ -1,6 +1,36 @@
-@mixin U8-font {
+@mixin caption($font-weight, $font-size, $line-height, $color) {
     font-family: 'U8';
     font-style: normal;
-    font-weight: 700;
-    color: #1B1C20;
+    @if $font-weight !=0 {
+        font-weight: $font-weight;
+    }
+    @else {
+        font-weight: 700;
+    }
+    @if $color !=0 {
+        color: $color;
+    }
+    @else {
+        color: #1B1C20;
+    }
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin text($font-weight, $font-size, $line-height, $color) {
+    @if $font-weight !=0 {
+        font-weight: $font-weight;
+    }
+    @else {
+        font-weight: 400;
+    }
+    @if $color !=0 {
+        color: $color;
+    }
+    @else {
+        color: #383A47;
+    }
+    font-size: $font-size;
+    line-height: $line-height;
+
 }

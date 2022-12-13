@@ -29,7 +29,7 @@ body {
     align-items: center;
     padding: 0 25px;
     border-radius: 6px;
-    color: #fff;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -87,25 +87,19 @@ body {
 .info {
     &-text {
         padding: 75px 0;
-        &-main {
-            @include U8-font;
-            font-weight: 800;
-            font-size: 50px;
-            line-height: 60px;
+        &-caption {
+            @include caption(800, 50px, 60px, 0);
             margin-bottom: 50px;
         }
 
-        &-subtext {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 32px;
-            color: #383A47;
+        &-text {
+            @include text(0, 18px, 32px, 0);
             margin-bottom: 40px;
         }
     }
 
     &-btn {
-        color: #fff;
+        color: #FFFFFF;
         width: 160px;
         height: 56px;
         display: flex;
@@ -162,7 +156,7 @@ body {
             width: 283px;
             border-radius: 9px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            background: #fff;
+            background: #FFFFFF;
             padding: 15px;
             display: grid;
             grid-template-columns: 50px 1fr;
@@ -181,19 +175,13 @@ body {
                 margin: 0;
             }
             p.name {
+                @include text(700, 12.4444px, 18px, #1B1C20);
                 font-style: normal;
-                font-weight: 700;
-                font-size: 12.4444px;
-                line-height: 18px;
-                color: #1B1C20;
             }
 
             p.review {
+                @include text(0, 12px, 18px, 0);
                 font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 18px;
-                color: #383A47;
                 mix-blend-mode: normal;
                 opacity: 0.7;
             }
@@ -226,7 +214,7 @@ body {
         border-radius: 60px;
         object-fit: cover;
         margin-left: -25px;
-        border: #fff 3px solid;
+        border: #FFFFFF 3px solid;
     }
     img:nth-child(1) {
         margin: 0;
@@ -265,12 +253,9 @@ body {
         text-align: left;
     }
     &-happy, &-text {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
+        @include text(0, 16px, 24px, 0);
         letter-spacing: 0px;
         text-align: left;
-        color: #383A47;
         mix-blend-mode: normal;
         opacity: 0.6;
     }
@@ -312,10 +297,8 @@ body {
         margin: 80px 0;
     }
 
-    &-text {
-        @include U8-font;
-        font-size: 36px;
-        line-height: 56px;
+    &-caption {
+        @include caption(0, 36px, 56px, 0);
         text-align: center;
         grid-column: 1 / 4;
         padding-bottom: 50px;
@@ -327,18 +310,13 @@ body {
         display: grid;
         grid-template-columns: 80px 1fr;
     }
-    &-name {
-        @include U8-font;
-        font-size: 21px;
-        line-height: 33px;
+    &-caption {
+        @include caption(0, 21px, 33px, 0);
     }
     &-text {
         margin-bottom: 25px;
         font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #383A47;
+        @include text(0, 16px, 24px, 0);
     }
 
     &-name, &-text {
@@ -380,24 +358,16 @@ body {
         padding: 0 70px;
     }
 
-    &-name {
-        @include U8-font;
-        font-size: 48px;
-        line-height: 56px;
+    &-caption {
+        @include caption(0, 48px, 56px, 0);
     }
 
     &-text {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 30px;
-        color: #383A47;
+        @include text(500, 18px, 30px, 0);
     }
 
     &-subtext {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #383A47;
+        @include text(0, 16px, 26px, 0);
     }
     &-phone {
         background-color: #FF5555;
@@ -422,17 +392,12 @@ body {
         grid-template-columns: 40% 60%;
     }
 
-    &-name {
-        @include U8-font;
-        font-size: 48px;
-        line-height: 56px;
+    &-caption {
+        @include caption(0, 48px, 56px, 0);
     }
 
     &-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #383A47;
+        @include text(0, 16px, 26px, 0);
         margin-bottom: 50px;
     }
 
@@ -468,17 +433,12 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
-    &-name {
-        @include U8-font;
-        font-size: 48px;
-        line-height: 56px;
+    &-caption {        
+        @include caption(0, 48px, 56px, 0);
     }
 
     &-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #383A47;
+        @include text(0, 16px, 26px, 0);
         margin-bottom: 50px;
     }
 
@@ -487,17 +447,13 @@ body {
         grid-template-columns: 18% 32% 14% 36%;
 
         &-num {
+            @include text(500, 42px, 56px, #1B1C20);
             font-style: normal;
-            font-weight: 500;
-            font-size: 42px;
-            line-height: 56px;
         }
 
         &-value {
+            @include text(0, 14px, 22px, #1B1C20);
             font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 22px;
             display: flex;
             align-items: center;
         }
@@ -519,12 +475,9 @@ body {
 
     &-name {
         grid-column: 1 / 3;
+        @include text(700, 48px, 58px, #FFFFFF);
         font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 58px;
         text-align: center;
-        color: #FFFFFF;
     }
 
     &-review {
@@ -532,25 +485,19 @@ body {
         grid-template-rows: 1fr 0.1fr 0.3fr;
 
         &-text {
-            background-color: #fff;
+            background-color: #FFFFFF;
             border-radius: 10px;
             padding: 35px 55px 25px;
             text-align: center;
 
             span {
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 28px;
+                @include text(700, 20px, 28px, #FD6003);
                 text-align: center;
-                color: #FD6003;
             }
 
             p {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 28px;
+                @include text(0, 18px, 28px, 0);
                 text-align: center;
-                color: #383A47;
                 mix-blend-mode: normal;
                 opacity: 0.7;
             }
@@ -558,7 +505,7 @@ body {
         &-triangle {
             width: 30px;
             height: 30px;
-            background-color: #fff;
+            background-color: #FFFFFF;
             left: calc(50% - 10px);
             clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
             transform: rotate(-45deg);
@@ -581,19 +528,13 @@ body {
         }
         &-name {
             span {
+                @include text(500, 18px, 30px, #FFFFFF);
                 font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 30px;
-                color: #FFFFFF;
             }
 
             p {
+                @include text(0, 14px, 24px, #FFFFFF);
                 font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 24px;
-                color: #FFFFFF;
                 margin: 0;
             }
         }
@@ -610,12 +551,8 @@ body {
     }
 
     &-question {
-        @include U8-font;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 56px;
+        @include caption(0, 48px, 56px, #1B1C20);
         text-align: center;
-        color: #1B1C20;
         width: 739px;
         padding-bottom: 35px;
     }
@@ -677,11 +614,8 @@ body {
     }
 
     &-copyright, &-policy {
+        @include text(0, 16px, 26px, #797B89);
         font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #797B89;
     }
     &-policy {
         a {
