@@ -42,14 +42,28 @@ body {
     padding: 25px 0;
     font-weight: 500;
     font-size: 16px;
-
-    &-logo {
-        background: url("/images/logo.png") no-repeat;
-        background-size: contain;
-        height: 100%;
-        width: 194px;
+    &-wrap {
+        display: grid;
+        grid-template-columns: 200px 1fr;
     }
 
+    &-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 94px;
+        }
+    }
+    &-items {
+        margin: auto;
+    }
     &-items, &-login, &-login-btn {
         display: flex;
         flex-direction: row;
@@ -73,6 +87,7 @@ body {
         }
         a:hover {
             cursor: pointer;
+            color: #FB8E0B;
         }
     }
 
@@ -330,20 +345,21 @@ body {
     &-wrap {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 100px;
     }
 
     &-imgwrap{
         display: grid;
         grid-template-rows: 1fr;
+        position: relative;
+        max-height: 380px;
+        max-width: 530px;
     }
 
     &-img {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        height: 380px;
-        margin: 0 30px;
         grid-row: 1 / 2;
+        width: 100%;
     }
 
     &-menu {
@@ -351,11 +367,12 @@ body {
         background: rgb(18, 20, 29, .8);;
         mix-blend-mode: normal;
         z-index: 10;
-        margin: -80px 41px 0 30px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 0 70px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     &-caption {
@@ -572,15 +589,15 @@ body {
         padding: 25px 0;
         font-weight: 500;
         font-size: 16px;
-        border-bottom: 1px solid #D4D4D8;
     }
 
     &-logo {
-        background: url("/images/logo.png") no-repeat;
-        background-size: contain;
-        height: 100%;
+        /*height: 100%;*/
         width: 95px;
         margin-top: 5px;
+        img {
+            width: 95px;
+        }
     }
 
     &-menu {
@@ -610,6 +627,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         padding: 35px 0;
+        border-top: 1px solid #D4D4D8;
 
     }
 
@@ -623,3 +641,6 @@ body {
         }
     }
 }
+
+@import 'mobile.scss';
+@import 'mobile-menu.scss';
