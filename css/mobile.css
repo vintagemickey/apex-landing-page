@@ -1,0 +1,166 @@
+@media screen and (max-width: 1299px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1025px) and (max-width) {
+  .video-chat-menu {
+    margin: -80px 0px 0 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /*.container {
+      width: 100%;
+  }*/
+  .start-info {
+    display: block;
+    padding-bottom: 0;
+  }
+  .customers img {
+    height: 40px;
+    width: 40px;
+  }
+  .info-img-main {
+    height: 480px;
+    margin: auto;
+  }
+  .info-img-ellipse {
+    margin: 24% 0 0 8%;
+    height: 344px;
+    margin: auto;
+  }
+  .info-customers-reviews {
+    margin-top: -54%;
+  }
+  .customer-review-text p {
+    font-size: 10px;
+  }
+  .customer-review-item-wrap {
+    width: 200px;
+  }
+  .features-wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 135px repeat(3, 1fr);
+    grid-column-gap: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .features-caption {
+    grid-column: 1/1;
+    padding: 0;
+  }
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .feature-caption {
+    text-align: center;
+  }
+  .feature-text {
+    text-align: center;
+  }
+  .video-chat {
+    padding: 40px 0;
+  }
+  .video-chat-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-chat-imgwrap {
+    display: flex;
+    flex-direction: column;
+    max-height: 340px;
+    max-width: 470px;
+  }
+  .video-chat-img {
+    margin: 0;
+    width: 100%;
+  }
+  .video-chat-caption {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .conversations {
+    padding: 40px 0;
+  }
+  .conversations-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .conversations-caption {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .inbox {
+    padding: 40px 0;
+  }
+  .inbox-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .inbox-stat {
+    grid-template-columns: 26% 28% 20% 36%;
+  }
+  .inbox-caption {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .inbox-imgwrap {
+    display: flex;
+    justify-content: center;
+  }
+  .clients {
+    padding: 40px 0;
+  }
+  .clients-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .clients-name {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .ready-wrap {
+    padding: 60px 0 30px;
+  }
+  .ready-question {
+    font-size: 36px;
+    line-height: 50px;
+    width: auto;
+  }
+  .footer-wrap {
+    flex-direction: column;
+  }
+  .footer-menu-items {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  .footer-logo {
+    margin-bottom: 40px;
+    width: auto;
+  }
+  .footer-logo img {
+    height: 45px;
+  }
+  .footer-copyrights {
+    margin-top: 32%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .footer-copyright {
+    grid-column: 1/3;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-policy {
+    display: flex;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=mobile.css.map */
