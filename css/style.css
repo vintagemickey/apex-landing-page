@@ -66,6 +66,12 @@ body {
 }
 .header-menu-item {
   margin: 0 10%;
+  text-decoration: none;
+  color: #1B1C20;
+}
+.header-menu-item:hover {
+  cursor: pointer;
+  color: #FB8E0B;
 }
 .header-menu-login-btn {
   margin-right: 10%;

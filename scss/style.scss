@@ -76,6 +76,13 @@ body {
 
     &-item {
         margin: 0 10%;
+        text-decoration: none;
+        color: #1B1C20;
+    }
+    
+    &-item:hover {
+        cursor: pointer;
+        color: #FB8E0B;
     }
 
     &-login-btn {
